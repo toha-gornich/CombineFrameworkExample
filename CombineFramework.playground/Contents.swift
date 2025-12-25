@@ -90,7 +90,7 @@ import Combine
  
  func fetchMovies(_ searchTerm: String) -> AnyPublisher<MovieResponse, Error> {
  
- let url = URL(string: "https://www.omdbapi.com/?s=\(searchTerm)&page=2&apiKey=564727fa")!
+ let url = URL(string: "https://www.omdbapi.com/?s=\(searchTerm)&page=2&apiKey=apiKey")!
  
  return URLSession.shared
  .dataTaskPublisher(for: url)
